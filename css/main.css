@@ -24,7 +24,7 @@ svg {
 circle{ 
     stroke:black; 
     stroke-width:1;
-    stroke-dasharray:10,5;
+    stroke-dasharray:1vw,.5vw;
     fill:white;
 }
 
