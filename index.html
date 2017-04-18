@@ -17,17 +17,65 @@
         
 <div id="container">
     <div id="map"></div>
-    <div id="urbanfurnishing_popup"> 
+    <div id="urbanfurnishing_popup" class="popup"> 
             <p>The most frequent urban manifestations of barricades during summit protests are burning dumpsters or cars. Since many major European cities have organized their trash system underground, however, dumpsters are vanishing from the imagery of street confrontations. Like Haussmann reacting to the frequent barricading of Paris's streets in the 19th century by planning broader avenues (Douglas 2008), contemporary city planners diminish the likelihood of disruption of urban flows by emptying the streets of objects useful for such a purpose.</p>
-            <p id="urbanfurnishing_citation">Scholl, Christian. Two Sides of a Barricade: (Dis)order and Summit Protest in Europe (SUNY Series, Praxis: Theory in Action) (Kindle Locations 933-937). State University of New York Press. Kindle Edition.</p> 
+            <p id="citation">Scholl, Christian. Two Sides of a Barricade: (Dis)order and Summit Protest in Europe (SUNY Series, Praxis: Theory in Action) (Kindle Locations 933-937). State University of New York Press. Kindle Edition.</p> 
     </div>
+    <div id="spacedivision_popup" class="popup"> 
+            <p>space division</p>
+            <p id="citation">Scholl, Christian. Two Sides of a Barricade: (Dis)order and Summit Protest in Europe (SUNY Series, Praxis: Theory in Action) (Kindle Locations 933-937). State University of New York Press. Kindle Edition.</p> 
+    </div>
+    <div id="protestdivision_popup" class="popup"> 
+            <p>protest division</p>
+            <p id="citation">Scholl, Christian. Two Sides of a Barricade: (Dis)order and Summit Protest in Europe (SUNY Series, Praxis: Theory in Action) (Kindle Locations 933-937). State University of New York Press. Kindle Edition.</p> 
+    </div>
+    <div id="urbanfabric_popup" class="popup"> 
+            <p>urban fabric</p>
+            <p id="citation">Scholl, Christian. Two Sides of a Barricade: (Dis)order and Summit Protest in Europe (SUNY Series, Praxis: Theory in Action) (Kindle Locations 933-937). State University of New York Press. Kindle Edition.</p> 
+    </div>
+    
+    <div id="barricade_popup" class="popup"> 
+            <p>barricade</p>
+            <p id="citation">Scholl, Christian. Two Sides of a Barricade: (Dis)order and Summit Protest in Europe (SUNY Series, Praxis: Theory in Action) (Kindle Locations 933-937). State University of New York Press. Kindle Edition.</p> 
+    </div>
+    
+    <div id="languagealteration_popup" class="popup_left"> 
+            <p>language alteration</p>
+            <p id="citation">Scholl, Christian. Two Sides of a Barricade: (Dis)order and Summit Protest in Europe (SUNY Series, Praxis: Theory in Action) (Kindle Locations 933-937). State University of New York Press. Kindle Edition.</p> 
+    </div>
+    
+    <div id="surveillance_popup" class="popup_left"> 
+            <p>surveillance</p>
+            <p id="citation">Scholl, Christian. Two Sides of a Barricade: (Dis)order and Summit Protest in Europe (SUNY Series, Praxis: Theory in Action) (Kindle Locations 933-937). State University of New York Press. Kindle Edition.</p> 
+    </div>
+    
+    <div id="strategicincapacitation_popup" class="popup_left"> 
+            <p>strategic incapacitation</p>
+            <p id="citation">Scholl, Christian. Two Sides of a Barricade: (Dis)order and Summit Protest in Europe (SUNY Series, Praxis: Theory in Action) (Kindle Locations 933-937). State University of New York Press. Kindle Edition.</p> 
+    </div>
+    
+    <div id="extended_popup" class="popup_left"> 
+            <p>strategic incapacitation</p>
+            <p id="citation">Scholl, Christian. Two Sides of a Barricade: (Dis)order and Summit Protest in Europe (SUNY Series, Praxis: Theory in Action) (Kindle Locations 933-937). State University of New York Press. Kindle Edition.</p> 
+    </div>
+    
+    <div id="ppublicspace_popup" class="popup_left"> 
+            <p>Private Public Space</p>
+            <p id="citation">Scholl, Christian. Two Sides of a Barricade: (Dis)order and Summit Protest in Europe (SUNY Series, Praxis: Theory in Action) (Kindle Locations 933-937). State University of New York Press. Kindle Edition.</p> 
+    </div>
+    
+    <div id="alternativespace_popup" class="popup_left"> 
+            <p>alternative place</p>
+            <p id="citation">Scholl, Christian. Two Sides of a Barricade: (Dis)order and Summit Protest in Europe (SUNY Series, Praxis: Theory in Action) (Kindle Locations 933-937). State University of New York Press. Kindle Edition.</p> 
+    </div>
+    
     
     <h1>Spatial Tactics <span>How Police Criminlise Mass Prtests</span> </h1> 
 <svg width="100%" height="100%" viewbox="0 0 1000 600">>
  
     <line id="urbanfabric_l" x1="20%" y1="20%" x2="30%" y2="50%"/>
     <line id="urbanfurnishing_l" x1="41%" y1="20%" x2="30%" y2="50%"/>
-    <line id="publictransportation_l" x1="10%" y1="50%" x2="30%" y2="50%"/>
+    <line id="barricade_l" x1="10%" y1="50%" x2="30%" y2="50%"/>
     <line id="spacialextention_l" x1="50%" y1="50%" x2="30%" y2="50%"/>
     <line id="spacedivision_l" x1="20%" y1="80%" x2="30%" y2="50%"/>
     <line id="protestdivision_l" x1="41%" y1="80%" x2="30%" y2="50%"/>
@@ -45,23 +93,32 @@
             <tspan x="20%" y="19.5%">Reconstruct</tspan>
             <tspan x="20%" y="22%">The Urban Fabric</tspan>
         </text>
+        
+        <svg id="urbanfabric_svg" height="85%" width="85%" x="10.72%" y="10.60%" opacity="1">
+            <defs>
+                <clipPath id="circleView">
+                    <circle  r="250" fill="#FFFFFF" />            
+                </clipPath>
+            </defs>
+        <image width="20" height="20" xlink:href="assets/urbanfabric.svg" clip-path="url(#circleView)" />
+        </svg> 
     </g>
     
-    <g id="urbanfurnishing">
-        
+    <g id="urbanfurnishing">  
         <circle cx="41%" cy="20%" r="7%" />
         <text id="urbanfurnishing_title">
             <tspan x="41%" y="19.5%">Redesign</tspan>
             <tspan x="41%" y="22%">Urban Furnishing</tspan>
         </text>
         
-        <svg id="urbanfurnishing_svg" height="85%" width="85%" x="31.66%" y="10.66%" opacity="1"><defs>
-            <clipPath id="circleView">
-                <circle  r="250" fill="#FFFFFF" />            
-            </clipPath>
-        </defs>
-        <image width="20" height="20" xlink:href="assets/urbanfurnishing.svg" clip-path="url(#circleView)" /></svg>
-        
+        <svg id="urbanfurnishing_svg" height="85%" width="85%" x="31.66%" y="10.66%" opacity="1">
+            <defs>
+                <clipPath id="circleView">
+                    <circle  r="250" fill="#FFFFFF" />            
+                </clipPath>
+            </defs>
+        <image width="20" height="20" xlink:href="assets/urbanfurnishing.svg" clip-path="url(#circleView)" />
+        </svg>  
     </g>
     
     <g id="ppublicspace">
@@ -70,6 +127,15 @@
             <tspan x="59%" y="19.5%">Privatisation</tspan>
             <tspan x="59%" y="22%">of Public Space</tspan>
         </text>
+        
+        <svg id="ppublicspace_svg" height="85%" width="85%" x="49.64%" y="10.66%" opacity="1">
+            <defs>
+                <clipPath id="circleView">
+                    <circle  r="250" fill="#FFFFFF" />            
+                </clipPath>
+            </defs>
+        <image width="20" height="20" xlink:href="assets/ppublicspace.svg" clip-path="url(#circleView)" />
+        </svg> 
     </g>
     
     <g id="alternativespace">
@@ -85,6 +151,15 @@
             <tspan x="90%" y="49.5%">Strategic</tspan>
             <tspan x="90%" y="52%">Incapacitation</tspan>
             </text>
+        
+        <svg id="strategicincapacitation_svg" height="85%" width="85%" x="80.69%" y="40.66%" opacity="1">
+            <defs>
+                <clipPath id="circleView">
+                    <circle  r="250" fill="#FFFFFF" />            
+                </clipPath>
+            </defs>
+        <image width="20" height="20" xlink:href="assets/strategicincapacitation.svg" clip-path="url(#circleView)" />
+        </svg> 
     </g>
     
     <g id="intangible">
@@ -95,11 +170,20 @@
         </text>
     </g>
     
-    <g id="spacialextention">
+    <g id="extended">
         <circle cx="50%" cy="50%" r="7%"/>
         <text>
-            <tspan x="50%" y="51%">Spacial Extention</tspan>
+            <tspan x="50%" y="50.5%">Spacial Extention</tspan>
         </text>
+        
+        <svg id="extended_svg" height="85%" width="85%" x="40.65%" y="40.66%" opacity="1">
+            <defs>
+                <clipPath id="circleView">
+                    <circle  r="250" fill="#FFFFFF" />            
+                </clipPath>
+            </defs>
+        <image width="20" height="20" xlink:href="assets/extended.svg" clip-path="url(#circleView)" />
+        </svg> 
     </g>
     
     <g id="tangible">
@@ -110,40 +194,85 @@
         </text>
     </g>
     
-    <g id="publictransportation">
+    <g id="barricade">
         <circle cx="10%" cy="50%" r="7%"/>
         <text>
-            <tspan x="10%" y="49.5%">Controlling</tspan>
-            <tspan x="10%" y="52%">Public Transportation</tspan>
+            <tspan x="10%" y="50.5%">Barricades</tspan>
         </text>
+        
+        <svg id="barricade_svg" height="85%" width="85%" x="0.65%" y="40.66%" opacity="1">
+            <defs>
+                <clipPath id="circleView">
+                    <circle  r="250" fill="#FFFFFF" />            
+                </clipPath>
+            </defs>
+        <image width="20" height="20" xlink:href="assets/barricade.svg" clip-path="url(#circleView)" />
+        </svg> 
     </g>
     
     <g id="spacedivision">
         <circle cx="20%" cy="80%" r="7%"/>
         <text>
             <tspan x="20%" y="81%">Space Division</tspan>
-        </text>    
+        </text> 
+        
+        <svg id="spacedivision_svg" height="85%" width="85%" x="10.7%" y="70.66%" opacity="1">
+            <defs>
+                <clipPath id="circleView">
+                    <circle  r="250" fill="#FFFFFF" />            
+                </clipPath>
+            </defs>
+        <image width="20" height="20" xlink:href="assets/spacedivison.svg" clip-path="url(#circleView)" />
+        </svg> 
     </g>
     
     <g id="protestdivision">
         <circle cx="41%" cy="80%" r="7%"/>
         <text>
             <tspan x="41%" y="81%">Protest Divsion</tspan>
-        </text>    
+        </text> 
+        
+        <svg id="protestdivision_svg" height="85%" width="85%" x="31.66%" y="70.7%" opacity="1">
+            <defs>
+                <clipPath id="circleView">
+                    <circle  r="250" fill="#FFFFFF" />            
+                </clipPath>
+            </defs>
+        <image width="20" height="20" xlink:href="assets/protestdivision.svg" clip-path="url(#circleView)" />
+        </svg> 
     </g>
     
     <g id="languagealteration">
         <circle cx="59%" cy="80%" r="7%"/>
         <text>
                 <tspan x="59%" y="81%">Language Alteration</tspan>
-            </text>    
+            </text>  
+        
+        <svg id="languagealteration_svg" height="85%" width="85%" x="50.17%" y="70.7%" opacity="1">
+            <defs>
+                <clipPath id="circleView">
+                    <circle  r="250" fill="#FFFFFF" />            
+                </clipPath>
+            </defs>
+        <image width="20" height="20" xlink:href="assets/languagealteration.svg" clip-path="url(#circleView)" />
+        </svg>
+        
     </g>
     
     <g id="surveillance">
         <circle cx="80%" cy="80%" r="7%"/>
         <text>
                 <tspan x="80%" y="81%">Surveillance</tspan>
-            </text>    
+        </text>
+        
+        <svg id="surveillance_svg" height="85%" width="85%" x="70.65%" y="70.7%" opacity="1">
+            <defs>
+                <clipPath id="circleView">
+                    <circle  r="250" fill="#FFFFFF" />            
+                </clipPath>
+            </defs>
+        <image width="20" height="20" xlink:href="assets/surveillance.svg" clip-path="url(#circleView)" />
+        </svg>
     </g>
     
 </svg>
@@ -154,6 +283,63 @@
                 $("#urbanfurnishing_svg").stop(true, false).fadeToggle("fast");
                 $("#urbanfurnishing_popup").stop(true, false).slideToggle("slow");
             }); 
+            
+            $("#spacedivision").hover(function(){
+                $("#spacedivision_svg").stop(true, false).fadeToggle("fast");
+                $("#spacedivision_popup").stop(true, false).slideToggle("slow");
+            });
+            
+            $("#protestdivision").hover(function(){
+                $("#protestdivision_svg").stop(true, false).fadeToggle("fast");
+                $("#protestdivision_popup").stop(true, false).slideToggle("slow");
+            });
+            
+            $("#urbanfabric").hover(function(){
+                $("#urbanfabric_svg").stop(true, false).fadeToggle("fast");
+                $("#urbanfabric_popup").stop(true, false).slideToggle("slow");
+            });
+            
+            $("#barricade").hover(function(){
+                $("#barricade_svg").stop(true, false).fadeToggle("fast");
+                $("#barricade_popup").stop(true, false).slideToggle("slow");
+            });
+            
+            $("#languagealteration").hover(function(){
+                $("#languagealteration_svg").stop(true, false).fadeToggle("fast");
+                $("#languagealteration_popup").stop(true, false).slideToggle("slow");
+            });
+            
+            $("#surveillance").hover(function(){
+                $("#surveillance_svg").stop(true, false).fadeToggle("fast");
+                $("#surveillance_popup").stop(true, false).slideToggle("slow");
+            });
+            
+            $("#strategicincapacitation").hover(function(){
+                $("#strategicincapacitation_svg").stop(true, false).fadeToggle("fast");
+                $("#strategicincapacitation_popup").stop(true, false).slideToggle("slow");
+            });
+            
+            $("#ppublicspace").hover(function(){
+                $("#ppublicspace_svg").stop(true, false).fadeToggle("fast");
+                $("#ppublicspace_popup").stop(true, false).slideToggle("slow");
+            });
+            
+            $("#alternativespace").hover(function(){
+                $("#alternativespace_popup").stop(true, false).slideToggle("slow");
+                $("#alternativespace circle").css('fill', '#1D1D1B');
+                $("#alternativespace text").css('fill', '#fff');
+            });
+            
+            $("#alternativespace").mouseleave(function(){
+                $("#alternativespace circle").css('fill', '#fff');
+                $("#alternativespace text").css('fill', '#000');
+            });
+            
+            $("#extended").hover(function(){
+                $("#extended_svg").stop(true, false).fadeToggle("fast");
+                
+            });
+            
         </script>
         
        <!-- <script>
