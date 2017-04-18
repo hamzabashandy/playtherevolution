@@ -7,34 +7,40 @@
         <LINK REL=StyleSheet HREF="css/main.css" TYPE="text/css" MEDIA=screen>
         <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,600" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.css' rel='stylesheet' />
 
     </head>
     
     <body>
 
         
-<div id="container"> 
+<div id="container">
+    <div id="map"></div>
+    <div id="urbanfurnishing_popup"> 
+            <p>The most frequent urban manifestations of barricades during summit protests are burning dumpsters or cars. Since many major European cities have organized their trash system underground, however, dumpsters are vanishing from the imagery of street confrontations. Like Haussmann reacting to the frequent barricading of Paris's streets in the 19th century by planning broader avenues (Douglas 2008), contemporary city planners diminish the likelihood of disruption of urban flows by emptying the streets of objects useful for such a purpose.</p>
+            <p id="urbanfurnishing_citation">Scholl, Christian. Two Sides of a Barricade: (Dis)order and Summit Protest in Europe (SUNY Series, Praxis: Theory in Action) (Kindle Locations 933-937). State University of New York Press. Kindle Edition.</p> 
+    </div>
+    
     <h1>Spatial Tactics <span>How Police Criminlise Mass Prtests</span> </h1> 
 <svg width="100%" height="100%" viewbox="0 0 1000 600">>
  
-    <line x1="20%" y1="20%" x2="30%" y2="50%"/>
-    <line x1="41%" y1="20%" x2="30%" y2="50%"/>
-    <line x1="10%" y1="50%" x2="30%" y2="50%"/>
-    <line x1="50%" y1="50%" x2="30%" y2="50%"/>
-    <line x1="20%" y1="80%" x2="30%" y2="50%"/>
-    <line x1="41%" y1="80%" x2="30%" y2="50%"/>
+    <line id="urbanfabric_l" x1="20%" y1="20%" x2="30%" y2="50%"/>
+    <line id="urbanfurnishing_l" x1="41%" y1="20%" x2="30%" y2="50%"/>
+    <line id="publictransportation_l" x1="10%" y1="50%" x2="30%" y2="50%"/>
+    <line id="spacialextention_l" x1="50%" y1="50%" x2="30%" y2="50%"/>
+    <line id="spacedivision_l" x1="20%" y1="80%" x2="30%" y2="50%"/>
+    <line id="protestdivision_l" x1="41%" y1="80%" x2="30%" y2="50%"/>
     
-    <line x1="59%" y1="20%" x2="70%" y2="50%"/>
-    <line x1="80%" y1="20%" x2="70%" y2="50%"/>
-    <line x1="90%" y1="50%" x2="70%" y2="50%"/>
-    <line x1="50%" y1="50%" x2="70%" y2="50%"/>
-    <line x1="59%" y1="80%" x2="70%" y2="50%"/>
-    <line x1="80%" y1="80%" x2="70%" y2="50%"/>
-    
-    
+    <line id="ppublicspace_l" x1="59%" y1="20%" x2="70%" y2="50%"/>
+    <line id="alternativespace_l" x1="80%" y1="20%" x2="70%" y2="50%"/>
+    <line id="strategicincapacitation_l" x1="90%" y1="50%" x2="70%" y2="50%"/>
+    <line id="spacialextention_l" x1="50%" y1="50%" x2="70%" y2="50%"/>
+    <line id="languagealteration_l" x1="59%" y1="80%" x2="70%" y2="50%"/>
+    <line id="surveillance_l" x1="80%" y1="80%" x2="70%" y2="50%"/>
     
     <g id="urbanfabric">
-        <circle cx="20%" cy="20%" r="7%"/>
+        <circle cx="20%" cy="20%" r="7%" />
         <text>
             <tspan x="20%" y="19.5%">Reconstruct</tspan>
             <tspan x="20%" y="22%">The Urban Fabric</tspan>
@@ -42,11 +48,20 @@
     </g>
     
     <g id="urbanfurnishing">
-        <circle cx="41%" cy="20%" r="7%"/>
-        <text>
+        
+        <circle cx="41%" cy="20%" r="7%" />
+        <text id="urbanfurnishing_title">
             <tspan x="41%" y="19.5%">Redesign</tspan>
             <tspan x="41%" y="22%">Urban Furnishing</tspan>
         </text>
+        
+        <svg id="urbanfurnishing_svg" height="85%" width="85%" x="31.66%" y="10.66%" opacity="1"><defs>
+            <clipPath id="circleView">
+                <circle  r="250" fill="#FFFFFF" />            
+            </clipPath>
+        </defs>
+        <image width="20" height="20" xlink:href="assets/urbanfurnishing.svg" clip-path="url(#circleView)" /></svg>
+        
     </g>
     
     <g id="ppublicspace">
@@ -134,14 +149,39 @@
 </svg>
         
 </div> 
-        
         <script>
+            $("#urbanfurnishing").hover(function(){
+                $("#urbanfurnishing_svg").stop(true, false).fadeToggle("fast");
+                $("#urbanfurnishing_popup").stop(true, false).slideToggle("slow");
+            }); 
+        </script>
+        
+       <!-- <script>
             
-            $("circle").click(function(){
-                    $("circle").hide();
+            $("#urbanfurnishing").hover(function(){
+                    $("#urbanfabric, #ppublicspace, #alternativespace, #strategicincapacitation, #intangible, #spacialextention, #publictransportation, #spacedivision, #protestdivision, #languagealteration, #surveillance").stop(true, false).delay(1000).fadeToggle("fast");
+                
+                    $("#urbanfabric_l, #ppublicspace_l, #alternativespace_l, #strategicincapacitation_l, #intangible_l, #spacialextention_l, #publictransportation_l, #spacedivision_l, #protestdivision_l, #languagealteration_l, #surveillance_l").stop(true, false).fadeOut("slow");
+                
+                    $("#right").stop(true, false).delay(1100).fadeToggle("fast");
+                
+                    $("#urbanfurnishing circle").css('fill', '#000').css('stroke', 'none');
+                    $("#urbanfurnishing text").css('fill', '#fff');
+                    $("#tangible circle").css('fill', '#fff');
+                    $("#tangible text").css('fill', '#000');
                 });
             
-        </script>
+            
+             $("#urbanfurnishing").mouseleave(function(){
+                    $("#urbanfabric_l, #ppublicspace_l, #alternativespace_l, #strategicincapacitation_l, #intangible_l, #spacialextention_l, #publictransportation_l, #spacedivision_l, #protestdivision_l, #languagealteration_l, #surveillance_l").delay(1100).fadeIn("slow");
+                 
+                    $("#urbanfurnishing circle").css('fill', '#fff').css('stroke', '#000');
+                    $("#urbanfurnishing text").css('fill', '#000');
+                    $("#tangible circle").css('fill', '#000');
+                    $("#tangible text").css('fill', '#fff');
+                });
+            
+        </script>-->
     </body>
         
 </html>

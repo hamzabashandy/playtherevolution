@@ -6,7 +6,13 @@ html, body {
     font-size: 20px;
 }
 
-
+#map { 
+    position:absolute; 
+    top:0; 
+    bottom:0; 
+    width:50%; 
+    right: 0;
+}
 
 #container {
     width: 100%;
@@ -18,15 +24,44 @@ html, body {
     background-repeat: no-repeat;
 }
 
+#urbanfurnishing_popup {
+    position: fixed;
+    background: #fff;
+    height: 100%;
+    width: 50%;
+    right: 0%;
+    z-index: 1;
+    text-align: justify;
+    font-size: 1.4vh;
+    font-family: 'Raleway', sans-serif;
+    line-height: 3.5vh; 
+    overflow-y: auto;
+    display: none;
+    border-right: 2px solid white;
+}
+
+#urbanfurnishing_popup p {
+  padding: 3em;  
+}
+
+
+#urbanfurnishing_citation{
+    font-style: italic;
+    line-height: 3vh;
+}
+
+
+
 svg {
     
 }
 
 circle{ 
     stroke:black; 
-    stroke-width:1;
-    stroke-dasharray:.6vw,.2vw;
+    stroke-width:.5px;
+    stroke-dasharray:.3vw,.1vw;
     fill:white;
+    cursor: pointer;
 }
 
 line {
@@ -35,11 +70,12 @@ line {
     stroke-dasharray:1,2;
 }
 
+
 text {
     text-anchor: middle;
-    
+    cursor: pointer;
     font-family: Raleway;
-    font-size: .5em;
+    font-size: 54%;
 }
 
 image {
@@ -78,6 +114,10 @@ span {
 }
 
 #tangible_t_header{
-    font-size: 1.5em;
+    font-size: 150%;
+}
+
+#urbanfurnishing_svg{
+    display: none;
 }
 

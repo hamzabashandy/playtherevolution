@@ -1,0 +1,43 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 602.65 602.65">
+    <defs>
+        <style>.cls-1{fill:#000;}.cls-2,.cls-4{fill:none;stroke-miterlimit:10;}.cls-2{stroke:#fff;stroke-width:8px;}.cls-3{fill:#fff;}.cls-4{stroke:#1d1d1b;}</style>
+    </defs>
+    <title>urbanfurnishing</title>
+    <circle class="cls-1" cx="301.32" cy="301.32" r="301.32" stroke="black"/>
+    <line class="cls-2" x1="37.66" y1="301.32" x2="565.1" y2="301.32"/>
+    <polygon class="cls-3" points="340.8 294.17 299.05 294.17 299.05 193.63 340.8 174.81 340.8 294.17"/>
+    <line class="cls-4" x1="300.54" y1="211.76" x2="342.29" y2="211.76"/>
+    <rect class="cls-3" x="157.13" y="174.81" width="275.99" height="12.27">
+        <animateTransform id="op" attributeName="transform" 
+            attributeType="XML"
+            type="translate"
+            values="0,0;0,122.5;0,122.5;0,122.5"
+            dur="6s"
+            begin="1s"
+            additive="sum"
+            fill="freeze"
+            repeatCount="indefinite"
+        />
+    </rect>
+    
+    <polygon class="cls-3" id="trash" points="382.17 294.17 212.33 294.17 183.08 187.08 410.24 187.08 382.17 294.17">
+        <animateTransform id="op" attributeName="transform" 
+            attributeType="XML"
+            type="translate"
+            values="0,0;0,122.5;0,122.5;0,122.5"
+            dur="6s"
+            begin="1s"
+            additive="sum"
+            fill="freeze"
+            repeatCount="indefinite"
+        />
+    </polygon>
+    
+    <rect class="cls-1" x="246.6" y="204.24" width="6.02" height="75.01" rx="1.06" ry="1.06"/><rect class="cls-1" x="293.03" y="204.24" width="6.02" height="75.01" rx="1.06" ry="1.06"/>
+    <rect class="cls-1" x="341.41" y="204.24" width="6.02" height="75.01" rx="1.06" ry="1.06"/>
+    <rect class="cls-3" x="707.03" y="180.06" width="12.68" height="12.68" transform="translate(-365.93 343) rotate(-33.52)"/>
+    <rect class="cls-3" x="710.07" y="201.8" width="12.68" height="12.68" transform="translate(-377.42 348.29) rotate(-33.52)"/>
+    <rect class="cls-3" x="696.88" y="221.46" width="12.68" height="12.68" transform="translate(-301.44 -252.03) rotate(14.61)"/>
+</svg>
+
+ 
