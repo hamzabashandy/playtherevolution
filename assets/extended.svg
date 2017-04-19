@@ -1,1 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310.03 310.03"><defs><style>.cls-1{fill:#1d1d1b;}.cls-2{fill:#fff;}.cls-3,.cls-4{fill:none;stroke:#e30613;stroke-miterlimit:10;stroke-width:2px;}.cls-4{stroke-dasharray:1.96 1.96;}.cls-5{fill:#e30613;}</style></defs><title>extended</title><g id="Layer_5" data-name="Layer 5"><circle class="cls-1" cx="155.01" cy="155.01" r="155.01"/></g><g id="Layer_4" data-name="Layer 4"><rect class="cls-2" x="118.67" y="117.69" width="74.38" height="74.38"/><polyline class="cls-3" points="193.04 191.06 193.04 192.06 192.04 192.06"/><line class="cls-4" x1="190.08" y1="192.06" x2="120.64" y2="192.06"/><polyline class="cls-3" points="119.67 192.06 118.67 192.06 118.67 191.06"/><line class="cls-4" x1="118.67" y1="189.11" x2="118.67" y2="119.67"/><polyline class="cls-3" points="118.67 118.69 118.67 117.69 119.67 117.69"/><line class="cls-4" x1="121.62" y1="117.69" x2="191.06" y2="117.69"/><polyline class="cls-3" points="192.04 117.69 193.04 117.69 193.04 118.69"/><line class="cls-4" x1="193.04" y1="120.64" x2="193.04" y2="190.09"/></g><g id="Barricades"><rect class="cls-5" x="121.54" y="120.51" width="69" height="69"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310.03 310.03">
+    <defs>
+        <style>.cls-1{fill:#1d1d1b;}.cls-2{fill:#fff;}.cls-3,.cls-4{fill:none;stroke:#e30613;stroke-miterlimit:10;stroke-width:2px;}.cls-4{stroke-dasharray:1.96 1.96;}.cls-5{fill:#e30613;}</style>
+    </defs>
+    <title>extended</title>
+    <g id="Layer_5" data-name="Layer 5"><circle class="cls-1" cx="155.01" cy="155.01" r="155.01"/></g>
+    <g id="Layer_4" data-name="Layer 4">
+        <rect class="cls-2" x="118.67" y="117.69" width="74.38" height="74.38"/>
+    </g>
+    <g id="Layer_4" data-name="Layer 4">
+        <rect class="cls-2" x="118.67" y="117.69" width="74.38" height="74.38">
+        <animateTransform id="op" attributeName="transform" 
+            attributeType="XML"
+            type="translate"
+            values="0,0;70,0;70,0"
+            dur="10s"
+            begin="1s"
+            additive="sum"
+            fill="freeze"
+            repeatCount="indefinite"
+        />
+        </rect>
+        
+ 
+    </g>
+    <g id="Barricades"><rect class="cls-5" x="121.54" y="120.51" width="69" height="69"/></g>
+</svg>

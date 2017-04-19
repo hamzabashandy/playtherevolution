@@ -2,7 +2,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiZW5qYWxvdCIsImEiOiJjaWhtdmxhNTIwb25zdHBsejk0N
     
     //Setup our Leaflet map using Mapbox.js
     var map = L.mapbox.map('map', 'mapbox.dark', {maxZoom: 18, minZoom: 14})
-    .setView([30.043467, 31.232311], 14);
+    .setView([30.043467, 31.232311], 15);
     
     function project(latlng){
       var array = [+latlng.lat, +latlng.lon]

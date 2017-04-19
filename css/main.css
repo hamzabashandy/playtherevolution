@@ -22,7 +22,7 @@ html, body {
 }
 
 #map {
-    visibility: hidden;
+    display: none;
     }
 
 #map2{
@@ -101,16 +101,33 @@ span {
     right: 25%;
     z-index: 1;
     text-align: justify;
-    font-size: 1.4vh;
+    font-size: 1.6vh;
     font-family: 'Raleway', sans-serif;
-    line-height: 3.5vh; 
+    line-height: 3.0vh; 
     overflow-y: auto;
     display: none;
     border-right: 2px solid white;
 }
 
+.popup #popup_title {
+    font-size: 2vh;
+    padding: 0em 0em 0em 2em;
+    margin: 1.5em 0em -1em 0em;
+    font-weight: 600;
+}
+
 .popup p {
-  padding: 3em;  
+  padding: 1em 3em 0em 3em;  
+}
+
+.close {
+  padding: 0em 1.5em 0em 0em;
+  text-align: right; 
+  color: white;
+  font-size: 3vh;
+  background: #000;
+  cursor: pointer;
+    
 }
 
 .popup_left {
@@ -124,22 +141,61 @@ span {
     text-align: justify;
     font-size: 1.4vh;
     font-family: 'Raleway', sans-serif;
-    line-height: 3.5vh; 
+    line-height: 3.0vh; 
     overflow-y: auto;
     display: none;
     border-right: 2px solid white;
 }
 
+.popup_left_x {
+    position: fixed;
+    background: #efefef;
+    height: 84%;
+    top:8%;
+    width: 25%;
+    left: 15%;
+    z-index: 1;
+    text-align: justify;
+    font-size: 1.4vh;
+    font-family: 'Raleway', sans-serif;
+    line-height: 3.0vh; 
+    overflow-y: auto;
+    display: none;
+    border-right: 2px solid white;
+}
+
+.popup_left_x p {
+  padding: 1em 3em 0em 3em;    
+}
+
 .popup_left p {
-  padding: 3em;  
+  padding: 1em 3em 0em 3em;    
+}
+
+.popup_left_x #popup_title {
+    font-size: 2vh;
+    padding: 0em 0em 0em 2em;
+    margin: 1.5em 0em -1em 0em;
+    font-weight: 600;
+}
+
+.popup_left #popup_title {
+    font-size: 2vh;
+    padding: 0em 0em 0em 2em;
+    margin: 1.5em 0em -1em 0em;
+    font-weight: 600;
 }
 
 .important_text{
     font-weight: 600;
+    font-size: 1.4vh;
 }
+
 #citation{
     font-style: italic;
-    line-height: 3vh;
+    line-height: 1.5vh;
+    font-size: 1.2vh;
+    color: grey;
 }
 
 
