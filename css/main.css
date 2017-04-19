@@ -1,9 +1,32 @@
 /* PAGE LAYOUT_START */
+/* LINKS */
+/* unvisited link */
+a {
+    color: #000;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* mouse over link */
+h2 a:hover {
+    font-weight: 600;
+    padding-bottom: .2vh;
+    border-bottom: 4px solid;
+    text-decoration: none;
+}
 
 html, body {
     height: 100%;
     margin: 0;
     font-size: 20px;
+}
+
+#map {
+    visibility: hidden;
+    }
+
+#map2{
+   visibility: h;
 }
 
 #container {
@@ -16,6 +39,20 @@ html, body {
     background-repeat: no-repeat;
 }
 
+#title{
+    display: none;
+}
+
+#subtitle{
+    
+}
+
+#title h1{
+    background: #efefef;
+    padding-right: 1%;
+    padding-left: .5%;
+}
+
 h1 {
     position: fixed;
     left: 1%;
@@ -26,6 +63,26 @@ h1 {
     font-weight: 600;
     top:-1%;
     }
+
+h2 {
+    position: fixed;
+    left: 1%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    padding-right: 1%;
+    padding-left: .5%;
+    top: 5%;
+    color: #fff;
+    font-size: 1.5vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;  
+    text-align: left;
+    }
+
+#title h2{
+    background: #efefef;
+    color: #000;
+}
 
 span {
     color: #000;
@@ -77,7 +134,9 @@ span {
   padding: 3em;  
 }
 
-
+.important_text{
+    font-weight: 600;
+}
 #citation{
     font-style: italic;
     line-height: 3vh;
@@ -171,3 +230,6 @@ image {
     display: none;
 }
 
+#map_c{
+    fill:#FFDE00;
+}
